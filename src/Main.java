@@ -48,17 +48,18 @@ public class Main {
             System.out.println("Задача 8");
             int attachment = 29000;
             int total = 0;
-            for (int i = 0; i <= 12; i ++) {
-                System.out.println("Месяц " + i + " , сумма накоплений равна " + total + " рублей");
+            for (int i = 1; i <= 12; i ++) {
                 total = attachment + total;
+                System.out.println("Месяц " + i + " , сумма накоплений равна " + total + " рублей");
             }
         }{
             System.out.println("");
             System.out.println("Задача 9");
             int attachment = 29000;
             int total = 0;
-            for (int i = 0; i <= 12; i ++) {
-                total = total/100 + total + attachment;
+            for (int i = 1; i <= 12; i ++) {
+                total = total + attachment;
+                total = total + total/100;
                 System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
             }
         }
